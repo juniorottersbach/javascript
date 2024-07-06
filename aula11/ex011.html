@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+</head>
+<body>
+    <h1>Sistema de consulta de nacionalidade</h1>
+    <p>Informe o país em que nasceu: <input type="text" name="nasci" id="inasci"><input type="button" value="Consultar" onclick="calculo()"></p>
+    <div id="res"></div>
+    <script>
+        function calculo() {
+            var pais = window.document.getElementById('inasci').value.toUpperCase()
+            //var nasc = pais.toUpperCase()
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Você é: `
+            if ((pais == 'BRASIL')||(pais == 'BRAZIL')) {
+                res.innerHTML += `<strong>Brasileiro.</strong>`
+            } else {
+                res.innerHTML += `<strong>Estrangeiro.</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
