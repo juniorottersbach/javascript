@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver. Idade</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Verificação de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de <strong>nascimento</strong>:
+                <input type="number" name="anonasc" id="ianonasc">
+            </p>
+            <p><strong>Sexo</strong>:
+                <input type="radio" name="radsex" id="imasc" checked>
+                <label for="imasc">masculino</label>
+                <input type="radio" name="radsex" id="ifem">
+                <label for="ifem">feminino</label>
+            </p>
+            <p>
+                <input id="btn" type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            <p>Preencha os dados para obter o seu resultado.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Rodapé</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
