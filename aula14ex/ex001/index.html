@@ -12,11 +12,14 @@
         <h1>Título</h1>
     </header>
     <section>
-        <div>
-            teste
+        <div id="dados">
+            <p><label for="inum1">Inicio: </label><input type="number" name="num1" id="inum1"></p>
+            <p><label for="inum2">Fim: </label><input type="number" name="num2" id="inum2"></p>
+            <p><label for="ipas">Passo: </label><input type="number" name="pas" id="ipas"></p>
+            <p><input type="button" value="Contar" id="botao" onclick="contar()"></p>
         </div>
         <div>
-
+            <p id="res">Esperando valores...</p>
         </div>
     </section>
     <footer>
