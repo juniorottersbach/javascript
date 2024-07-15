@@ -8,10 +8,15 @@ function adicionar(){
         window.alert('O valor deve ser entre 1 e 100')
     } else {
         let n = Number(num.value)
-        lista.push(n)
-        let item = document.createElement('option')
-        tab.appendChild(item)
-        item.text += `Adicionado: ${n}`
+        if (lista.includes(n)) {
+            window.alert('O valor já está na lista')
+        } else {
+            lista.push(n)
+            let item = document.createElement('option')
+            tab.appendChild(item)
+            item.text += `Adicionado: ${n}`
+        }
+        
     }
 }
 function finalizar() {
